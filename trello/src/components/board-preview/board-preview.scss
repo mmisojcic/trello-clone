@@ -1,0 +1,57 @@
+.board-preview{
+	background-size: cover;
+    background-position: 50%;
+    color: var(--color-text-secondary);
+    padding: .5rem;
+    position: relative;
+	text-decoration: none;
+	
+	height: 100%;
+	border-radius: var(--item-border-radius);
+
+	&-details{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height:80px;
+
+		&-title{
+			pointer-events: none;
+			position: relative;
+			z-index: 101;
+			font-size: 16px;
+			font-weight: 700;
+		}
+	
+		&-options{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding: .25rem;
+			transition: all .2s;
+
+			&-star{
+				font-size: 14px;
+				line-height: 18px;
+				transition: all .2s;
+			}
+			
+		}
+	}
+
+	&-fade{
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		transition: all .2s;
+		background-color: rgba(0,0,0,.10);
+
+		&:hover{
+			background-color: rgba(0,0,0,.25);
+		}
+	}
+}

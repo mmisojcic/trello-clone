@@ -1,0 +1,21 @@
+.action-item{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	padding:4px 8px;
+	border-radius: var(--item-border-radius);
+	border:	none;
+	transition: all .2s;
+	cursor: pointer;
+	background-color: transparent;
+	
+	&-icon{
+		font-size: 23px;
+		vertical-align: middle;
+	}
+
+	&-label{
+		text-align: left;
+	}
+}

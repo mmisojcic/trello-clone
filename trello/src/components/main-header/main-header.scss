@@ -1,0 +1,80 @@
+.header{
+	background-color: var(--color-primary);
+	display: flex;
+	align-items: center;
+	height: 40px;
+	width:100%;
+	padding: 4px;
+	
+	&-side{
+		display: flex;
+		flex-grow: 1;
+		flex-basis: 100%;
+
+		&-right{
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			&-member{
+				border: none;
+				box-shadow: none;
+				background-color: transparent;
+				display: block;
+				height: 32px;
+				margin-right: 0;
+				position: relative;
+				width: 32px;
+				outline: 0;
+
+				&-avatar{
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-size: cover;
+					border-radius:50%;
+					box-sizing: border-box;
+					display: flex;
+					justify-content: center;
+					height: 32px;
+					width: 32px;
+				}
+			}
+		}
+	}
+
+	&-logo{
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		transition: all .2s;
+		opacity:0.5;
+  
+		&:hover{
+	  		opacity:0.8;
+		}
+
+		&-icon{
+			background-image: url(https://a.trellocdn.com/prgb/dist/images/header-loading-logo.d73159084f5122775d4d.gif);
+			background-size: 18px 18px;
+			display: inline-block;
+		}
+
+		&-text{
+			background-image: url(https://a.trellocdn.com/prgb/dist/images/header-logo-2x.01ef898811a879595cea.png);
+			background-position: 100% 0;
+			background-repeat: no-repeat;
+			background-size: 80px 30px;
+			display: inline-block;
+			height: 30px;
+			width: 80px;
+		}
+	}
+
+	&-color-main{
+		background-color: var(--color-primary);
+	}
+
+	&-color-transparent{
+		background-color: rgba(0,0,0,.32);
+	}
+}

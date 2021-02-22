@@ -1,0 +1,36 @@
+.action-item-list{
+	height: 28px;
+
+	&:hover{
+		background-color: var(--color-action-item-light);
+	}
+
+	&:active{
+		background-color: var(--color-action-item-dark);
+	}
+
+	&-icon{
+		color: var(--color-icon)
+	}
+
+	&-label{
+		color: var(--color-text-primary);
+	}
+}
+
+.action-item-transparent{
+	color:var(--color-text-secondary);
+	background-color: var(--color-action-item-transparent) !important;
+	padding: 8px 10px !important;
+	height:auto;
+
+	&:active{
+		background-color: var(--color-action-item-transparent-light) !important;
+	}
+}
+
+.add-new-list{
+	padding:8px;
+	background-color: var(--color-content-background);
+	border-radius: var(--item-border-radius);
+}

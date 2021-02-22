@@ -1,0 +1,33 @@
+.board{
+    margin-top:2rem;
+	user-select: none;
+    white-space: nowrap;
+    margin-bottom: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &-add-list{
+        width: 272px;
+        margin: 0 4px;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    &-background{
+        position: fixed;
+        top:0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+	    background-size: cover;
+        background-position: 50%;
+    }
+}

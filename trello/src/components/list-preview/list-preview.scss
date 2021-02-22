@@ -1,0 +1,39 @@
+.list-preview{
+	width: 272px;
+    margin: 0 4px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+
+	&-content{
+		background-color: var(--color-content-background);
+		border-radius: var(--item-border-radius);
+		display: flex;
+		flex-direction: column;
+		max-height: 100%;
+		position: relative;
+
+		&-header{
+			flex: 0 0 auto;
+			padding: 10px 8px;
+			position: relative;
+			min-height: 28px;
+		
+		}
+
+		&-cards{
+			flex: 1 1 auto;
+			margin-bottom: 0;
+			overflow-y: auto;
+			overflow-x: hidden;
+			margin: 0 4px;
+			padding: 0 4px;
+			z-index: 1;
+		}
+
+		&-options{
+			padding:8px;
+		}
+	}
+}
